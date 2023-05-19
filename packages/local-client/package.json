@@ -1,0 +1,51 @@
+{
+  "name": "local-client",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@babel/eslint-parser": "^7.21.8",
+    "@babel/parser": "^7.21.8",
+    "@babel/traverse": "^7.21.5",
+    "@fortawesome/fontawesome-free": "^6.4.0",
+    "@monaco-editor/react": "^4.5.1",
+    "@types/prettier": "^2.7.2",
+    "@types/react-redux": "^7.1.25",
+    "@types/react-resizable": "^3.0.4",
+    "@uiw/react-md-editor": "^3.20.10",
+    "axios": "^1.4.0",
+    "buffer": "^6.0.3",
+    "bulmaswatch": "^0.8.1",
+    "esbuild-wasm": "^0.8.27",
+    "immer": "^8.0.0",
+    "localforage": "^1.10.0",
+    "monaco-jsx-highlighter": "^2.0.4",
+    "prettier": "^2.8.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.5",
+    "react-resizable": "^3.0.5",
+    "redux": "^4.2.1",
+    "redux-thunk": "^2.4.2"
+  },
+  "devDependencies": {
+    "@types/babel__traverse": "^7.18.5",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "@typescript-eslint/parser": "^5.57.1",
+    "@vitejs/plugin-react": "^4.0.0",
+    "eslint": "^8.38.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.3.4",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.2"
+  }
+}

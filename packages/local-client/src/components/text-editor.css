@@ -1,0 +1,36 @@
+.w-md-editor .title {
+  line-height: unset !important;
+  font-size: unset !important;
+  font-weight: unset !important;
+}
+
+.text-editor .w-md-editor-bar svg {
+  display: none;
+}
+.text-editor-preview .wmde-markdown.wmde-markdown-color {
+  background-color: #1d2a38 !important;
+}
+
+.text-editor .w-md-editor-bar {
+  flex-shrink: 0;
+  width: 100%;
+  background-repeat: no-repeat;
+  height: 20px;
+  background-color: #37414b;
+  background-position: 50%;
+  position: relative;
+  cursor: row-resize;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAFAQMAAABo7865AAAABlBMVEVHcEzMzMzyAv2sAAAAAXRSTlMAQObYZgAAABBJREFUeF5jOAMEEAIEEFwAn3kMwcB6I2AAAAAASUVORK5CYII=");
+}
+
+.w-md-editor-preview ul {
+  list-style-type: disc;
+}
+
+.text-editor-preview .wmde-markdown {
+  color: #dee5ed !important;
+  background-color: #1f2d3b !important;
+  max-height: 50vh !important;
+  overflow-y: scroll;
+  color-scheme: dark;
+}

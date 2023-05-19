@@ -1,0 +1,9 @@
+.action-bar-wrapper {
+  height: 30px;
+  width: 100%;
+}
+
+.cell-list-item {
+  position: relative;
+  background-color: #37414b;
+}

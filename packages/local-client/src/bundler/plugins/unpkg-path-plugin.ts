@@ -1,5 +1,4 @@
 import * as esbuild from "esbuild-wasm";
-import axios from "axios";
 
 export const unpkgPathPlugin = () => {
   return {

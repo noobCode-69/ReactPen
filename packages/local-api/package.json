@@ -23,9 +23,9 @@
     "typescript": "^5.0.4"
   },
   "dependencies": {
+    "@react-journal/local-client": "^1.0.0",
     "cors": "^2.8.5",
     "express": "^4.18.2",
-    "http-proxy-middleware": "^2.0.6",
-    "@react-journal/local-client": "^0.0.0"
+    "http-proxy-middleware": "^2.0.6"
   }
 }

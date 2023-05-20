@@ -22,6 +22,6 @@
     "typescript": "^5.0.4"
   },
   "dependencies": {
-    "@react-journal/local-client": "^0.0.0"
+    "@react-journal/local-client": "^1.0.0"
   }
 }

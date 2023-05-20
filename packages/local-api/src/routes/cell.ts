@@ -13,25 +13,28 @@ export const createCellsRouter = (filename: string, dir: string) => {
   router.use(express.json());
 
   const fullPath = path.join(dir, filename);
-  router.get("/cell", async (req, res) => {
+  router.get("/cells", async (req, res) => {
     try {
       const result = await fs.readFile(fullPath, { encoding: "utf-8" });
-      res.send(JSON.parse(result));
+      // console.log(result);
+      return res.send(JSON.parse(result));
     } catch (error: any) {
       if (error.code === "ENOENT") {
         // Add code to create a file and add default cells
+        // console.log("insdide catch");
         await fs.writeFile(fullPath, "[]", "utf-8");
-        res.send([]);
+        return res.send([]);
       } else {
+        // console.log("throwing an error");
         throw error;
       }
     }
   });
 
-  router.post("/cell", async (req, res) => {
+  router.post("/cells", async (req, res) => {
     const { cells }: { cells: Cell[] } = req.body;
     await fs.writeFile(fullPath, JSON.stringify(cells), "utf-8");
-    res.send({ status: "ok" });
+    return res.send({ status: "ok" });
   });
 
   return router;

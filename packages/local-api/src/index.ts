@@ -22,7 +22,7 @@ export const serve = (
     );
   } else {
     const packagePath = require.resolve("local-client/dist/index.html");
-    app.use(express.static(path.dirname(packagePath)));
+    app.use("/", express.static(path.dirname(packagePath)));
   }
 
   return new Promise<void>((resolve, reject) => {

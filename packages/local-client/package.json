@@ -1,17 +1,22 @@
 {
-  "name": "local-client",
-  "private": true,
+  "name": "@react-journal/local-client",
+  "publishConfig": {
+    "access": "public"
+  },
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "prepublishOnly": "npm run build",
     "start": "vite",
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
-  "dependencies": {
-
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
     "@fortawesome/fontawesome-free": "^6.4.0",
     "@monaco-editor/react": "^4.5.1",
     "@types/prettier": "^2.7.2",
@@ -29,9 +34,7 @@
     "react-redux": "^8.0.5",
     "react-resizable": "^3.0.5",
     "redux": "^4.2.1",
-    "redux-thunk": "^2.4.2"
-  },
-  "devDependencies": {
+    "redux-thunk": "^2.4.2",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@typescript-eslint/eslint-plugin": "^5.57.1",

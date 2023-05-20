@@ -21,7 +21,7 @@ export const serve = (
       })
     );
   } else {
-    const packagePath = require.resolve("local-client/dist/index.html");
+    const packagePath = require.resolve("@react-journal/local-client/dist/index.html");
     app.use("/", express.static(path.dirname(packagePath)));
   }
 

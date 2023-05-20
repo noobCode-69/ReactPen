@@ -1,6 +1,7 @@
+#!/usr/bin/env node
 import path from "path";
 import { Command } from "commander";
-import { serve } from "local-api";
+import { serve } from "@react-journal/local-api";
 const isProduction = process.env.NODE_ENV === "production";
 export const serveCommand = new Command()
   .command("serve [filename]")

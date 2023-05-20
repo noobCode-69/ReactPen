@@ -1,20 +1,27 @@
 {
-  "name": "cli",
+  "name": "react-journal",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "bin": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
+    "prepublishOnly": "esbuild src/index.ts --platform=node --outfile=dist/index.js --bundle --minify --define:process.env.NODE_ENV=\\\"production\\\"",
     "start": "tsc --watch --preserveWatchOutput"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "commander": "^10.0.1",
-    "local-api": "^1.0.0"
-  },
   "devDependencies": {
+    "@react-journal/local-api": "^1.0.0",
     "@types/node": "^20.2.1",
+    "commander": "^10.0.1",
+    "esbuild": "0.8.26",
     "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@react-journal/local-client": "^0.0.0"
   }
 }

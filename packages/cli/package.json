@@ -15,7 +15,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@react-journal/local-api": "^1.0.0",
+    "@react-journal/local-api": "^3.0.0",
     "@types/node": "^20.2.1",
     "commander": "^10.0.1",
     "esbuild": "0.8.26",

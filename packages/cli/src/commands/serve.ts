@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 import path from "path";
 import { Command } from "commander";
 import { serve } from "@react-journal/local-api";

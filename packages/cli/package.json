@@ -1,6 +1,6 @@
 {
   "name": "react-journal",
-  "version": "7.0.0",
+  "version": "7.0.1",
   "description": "",
   "bin": "dist/index.js",
   "files": [
@@ -14,14 +14,14 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@react-journal/local-api": "^7.0.0",
+    "@react-journal/local-api": "^7.0.1",
     "@types/node": "^20.2.1",
     "commander": "^10.0.1",
     "esbuild": "0.8.26",
     "typescript": "^5.0.4"
   },
   "dependencies": {
-    "@react-journal/local-client": "^7.0.0"
+    "@react-journal/local-client": "^7.0.1"
   },
   "gitHead": "ccaed9db21565177d212e0ea4975762343ace570"
 }
